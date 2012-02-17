@@ -1,0 +1,10 @@
+%h1 Publicar anuncio
+%p
+  = link_to 'Regresar al listado', clientes_anuncios_path
+- if @anuncio.errors.any?
+  %ul
+    - @anuncio.errors.full_messages.each do |msj|
+      %li= msj
+= form_for @anuncio, :url => clientes_anuncios_path,            |
+  :html => {:class => "frm_anuncio", :multipart => true} do |f| |
+  = render :partial => "formulario", :locals => {:f => f}

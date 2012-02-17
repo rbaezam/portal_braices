@@ -1,0 +1,5 @@
+%h1 Editar anuncio
+%p
+  = link_to 'Regresar al listado', clientes_anuncios_path
+= form_for @anuncio, :url => clientes_anuncio_path, :html => {:class => "frm_anuncio"} do |f|
+  = render :partial => "formulario", :locals => {:f => f}

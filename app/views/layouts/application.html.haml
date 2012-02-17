@@ -1,0 +1,41 @@
+!!!
+%html
+  %head
+    %title
+      = yield :titulo
+      \- Braices
+    = yield :meta_titulo
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    #pagina.container
+      %header
+        #titulo.span-18
+          %h2 Portal de Bienes Raices
+        #usuario.span-5
+          - if usuario_signed_in?
+            = current_usuario.email
+            = link_to 'Cerrar sesión', destroy_usuario_session_path, :method => :delete
+            = link_to 'Mi cuenta', edit_usuario_registration_path
+          - else
+            = link_to 'Iniciar sesión', new_usuario_session_path
+            = link_to 'Registrarme', new_usuario_registration_path
+        .clear
+      %nav
+        %ul
+          %li
+            = link_to 'Inicio', root_path
+          %li
+            = link_to 'Anuncios', anuncios_path
+          %li
+            = link_to 'Publicar anuncio', new_clientes_anuncio_path
+      %section#contenido
+        - if not notice.blank?
+          %p.notice= notice
+        - if not alert.blank?
+          %p.alert= alert
+        = yield
+        .clear
+      %footer
+        Pie de página

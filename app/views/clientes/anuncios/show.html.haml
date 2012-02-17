@@ -1,0 +1,46 @@
+%h1= @anuncio.titulo
+%p
+  = link_to 'Editar anuncio', edit_clientes_anuncio_path(@anuncio)
+%article.detalles_anuncio
+  %section.anuncio
+    %h3 Detalles del anuncio
+    %dl
+      %dt Descripción:
+      %dd= @anuncio.descripcion
+      %dt Fecha de publicación:
+      %dd= l @anuncio.fecha_publicacion
+      %dt Fecha de vencimiento:
+      %dd= l @anuncio.fecha_vencimiento
+  %section.propiedad
+    %h3 Detalles de la propiedad
+    %dl
+      %dt Dirección:
+      %dd= @anuncio.direccion
+      %dt Precio de venta:
+      %dd= number_to_currency @anuncio.precio_venta
+      %dt Precio de renta:
+      %dd= number_to_currency @anuncio.precio_renta
+      %dt Número de cuartos:
+      %dd= @anuncio.num_cuartos
+      %dt Número de baños:
+      %dd= @anuncio.num_banios
+      %dt Construcción (m²):
+      %dd= @anuncio.construccion_m2
+      %dt Terreno (m²):
+      %dd= @anuncio.terreno_m2
+      %dt Año de construcción:
+      %dd= @anuncio.anio_construccion
+      %dt Tipo de propiedad:
+      %dd= @anuncio.tipo_propiedad.nombre unless @anuncio.tipo_propiedad.nil?
+      %dt Localidad:
+      %dd= @anuncio.localidad.nombre unless @anuncio.localidad.nil?
+      %dt Características:
+      %dd= @anuncio.caracteristicas
+  %section.fotos
+    %ul
+      - @anuncio.fotos.each do |foto|
+        %li
+          - if not foto.foto.nil?
+            = image_tag foto.foto.url(:peque)
+%p
+  = link_to 'Regresar al listado', clientes_anuncios_path

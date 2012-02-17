@@ -1,0 +1,28 @@
+%h1 Listado de anuncios
+%p
+  = link_to 'Publicar anuncio', new_clientes_anuncio_path
+%table
+  %thead
+    %tr
+      %th Título
+      %th Fecha de publicación
+      %th Fecha de vencimiento
+      %th Dirección
+      %th Acciones
+  %tbody
+    - @anuncios.each do |anuncio|
+      %tr
+        %td
+          = anuncio.titulo
+        %td
+          = l anuncio.fecha_publicacion unless anuncio.fecha_publicacion.nil?
+        %td
+          = l anuncio.fecha_vencimiento
+        %td
+          = anuncio.direccion
+        %td
+          = link_to 'Detalles', clientes_anuncio_path(anuncio)
+          = link_to 'Editar', edit_clientes_anuncio_path(anuncio)
+          = link_to 'Eliminar', clientes_anuncio_path(anuncio),    |
+            :confirm => "¿Seguro que deseas eliminar el anuncio?", |
+            :method => :delete                                     |

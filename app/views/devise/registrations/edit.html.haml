@@ -1,0 +1,26 @@
+%h2
+  Editar #{resource_name.to_s.humanize}
+= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f|
+  = devise_error_messages!
+  %div
+    = f.label :email, "Correo:"
+    %br/
+    = f.email_field :email
+  %div
+    = f.label :password, "Contraseña:"
+    %i (Dejar vacío si no desea cambiarla)
+    %br/
+    = f.password_field :password
+  %div
+    = f.label :password_confirmation, "Confirmación de la contraseña:"
+    %br/
+    = f.password_field :password_confirmation
+  %div
+    = f.label :current_password, "Contraseña actual:"
+    %i (se necesita la contraseña actual para confirmar los cambios)
+    %br/
+    = f.password_field :current_password
+  %div= f.submit "Actualizar"
+%h3 Cancelar mi cuenta
+%p= link_to "Cancelar mi cuenta", registration_path(resource_name), :confirm => "¿Está seguro?", :method => :delete
+= link_to "Regresar", :back

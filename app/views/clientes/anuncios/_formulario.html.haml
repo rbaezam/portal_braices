@@ -1,0 +1,54 @@
+%p
+  = f.label :titulo
+  = f.text_field :titulo
+%p
+  = f.label :descripcion
+  = f.text_area :descripcion, :rows => 5, :cols => 40
+%p
+  = f.label :direccion
+  = f.text_area :direccion, :rows => 5, :cols => 40
+%p
+  = f.label :precio_venta
+  = f.number_field :precio_venta, :min=>"1"
+%p
+  = f.label :precio_renta
+  = f.number_field :precio_renta, :min=>"1"
+%p
+  = f.label :num_cuartos
+  = f.number_field :num_cuartos
+%p
+  = f.label :num_banios
+  = f.number_field :num_banios
+%p
+  = f.label :anio_construccion
+  = f.number_field :anio_construccion
+%p
+  = f.label :tipo_propiedad_id
+  = f.collection_select :tipo_propiedad_id, @tipos_propiedades, :id, :nombre, |
+    {:include_blank => '[Seleccione un elemento]'}                            |
+%p
+  = f.label :localidad_id
+  = f.collection_select :localidad_id, @localidades, :id, :nombre, |
+    {:include_blank => '[Seleccione una opción]'}                  |
+%p
+  = f.label :metros_frente
+  = f.number_field :metros_frente
+%p
+  = f.label :metros_fondo
+  = f.number_field :metros_fondo
+%p
+  = f.label :caracteristicas
+  = f.text_area :caracteristicas, :rows => 5, :cols => 40
+= f.fields_for :fotos do |fotos|
+  - if fotos.object.new_record?
+    %p
+      = fotos.label :foto, "Foto"
+      = fotos.file_field :foto
+= f.fields_for :fotos do |fotos|
+  - unless fotos.object.new_record?
+    %p
+      = link_to image_tag(fotos.object.foto.url(:peque)), |
+        fotos.object.foto.url(:original)                  |
+      = fotos.check_box :_destroy
+%p
+  = f.submit "Aceptar"

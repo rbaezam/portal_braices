@@ -1,0 +1,261 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 347.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/rodolfo/Proyectos/braices/app/assets/stylesheets/sitio.css.scss",
+		"/home/rodolfo/Proyectos/braices/app/assets/stylesheets/layout.css.scss",
+		"/home/rodolfo/Proyectos/braices/app/views/layouts/application.html.haml",
+		"/home/rodolfo/Proyectos/braices/config/environments/development.rb",
+		"/home/rodolfo/Proyectos/braices/app/assets/stylesheets/application.css",
+		"/home/rodolfo/Proyectos/braices/public/assets/application.css",
+		"/home/rodolfo/Proyectos/braices/app/assets/stylesheets/screen.css",
+		"/home/rodolfo/Proyectos/braices/Gemfile",
+		"/home/rodolfo/Proyectos/braices/app/views/devise/mailer/unlock_instructions.html.haml",
+		"/home/rodolfo/Proyectos/braices/app/views/devise/mailer/unlock_instructions.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/devise/mailer/reset_password_instructions.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/devise/mailer/confirmation_instructions.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/devise/unlocks/new.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/devise/shared/_links.haml",
+		"/home/rodolfo/Proyectos/braices/app/views/devise/shared/_links.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/devise/sessions/new.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/devise/registrations/new.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/devise/registrations/edit.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/devise/passwords/new.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/devise/passwords/edit.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/devise/confirmations/new.html.haml",
+		"/home/rodolfo/Proyectos/braices/config/application.rb",
+		"/home/rodolfo/Proyectos/braices/app/views/devise/confirmations/new.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/clientes/anuncios/destroy.html.haml",
+		"/home/rodolfo/Proyectos/braices/app/views/clientes/anuncios/update.html.haml",
+		"/home/rodolfo/Proyectos/braices/app/views/clientes/anuncios/show.html.haml",
+		"/home/rodolfo/Proyectos/braices/app/views/clientes/anuncios/show.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/clientes/anuncios/new.html.haml",
+		"/home/rodolfo/Proyectos/braices/app/views/clientes/anuncios/new.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/clientes/anuncios/index.html.haml",
+		"/home/rodolfo/Proyectos/braices/app/views/clientes/anuncios/index.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/clientes/anuncios/edit.html.haml",
+		"/home/rodolfo/Proyectos/braices/app/views/clientes/anuncios/edit.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/clientes/anuncios/create.html.haml",
+		"/home/rodolfo/Proyectos/braices/app/views/clientes/anuncios/create.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/clientes/anuncios/_formulario.html.haml",
+		"/home/rodolfo/Proyectos/braices/app/views/clientes/anuncios/_formulario.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/anuncios/_anuncio_corto.html.haml",
+		"/home/rodolfo/Proyectos/braices/app/views/anuncios/_anuncio_corto.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/anuncios/_anuncio.html.haml",
+		"/home/rodolfo/Proyectos/braices/app/views/anuncios/_anuncio.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/anuncios/index.html.haml",
+		"/home/rodolfo/Proyectos/braices/app/views/anuncios/index.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/sitio/_formulario_buscar.html.haml",
+		"/home/rodolfo/Proyectos/braices/app/views/sitio/_formulario_buscar.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/sitio/index.html.haml",
+		"/home/rodolfo/Proyectos/braices/app/views/sitio/index.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/anuncios/show.html.haml",
+		"/home/rodolfo/Proyectos/braices/app/views/layouts/application.html.erb",
+		"/home/rodolfo/Proyectos/braices/app/views/anuncios/show.html.erb",
+		"/home/rodolfo/.config/sublime-text-2/Packages/User/Base File.sublime-settings",
+		"/home/rodolfo/Proyectos/tareas/app/assets/stylesheets/layout.css.scss",
+		"/home/rodolfo/.config/sublime-text-2/Packages/User/Global.sublime-settings",
+		"/home/rodolfo/Proyectos/tareas/test/functional/tareas_controller_test.rb",
+		"/home/rodolfo/Proyectos/tareas/app/assets/stylesheets/application.css",
+		"/home/rodolfo/Proyectos/tareas/app/assets/javascripts/application.js",
+		"/home/rodolfo/Proyectos/tareas/db/seeds.rb",
+		"/home/rodolfo/.config/sublime-text-2/Packages/Default/Base File.sublime-settings",
+		"/home/rodolfo/.config/sublime-text-2/Packages/Default/Global.sublime-settings",
+		"/home/rodolfo/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/rodolfo/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"appl",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"devel",
+				"config/environments/development.rb"
+			],
+			[
+				"application",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"appl.cs",
+				"public/assets/application.css"
+			],
+			[
+				"scr",
+				"app/assets/stylesheets/screen.css"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"siti",
+				"app/assets/stylesheets/sitio.css.scss"
+			],
+			[
+				"layo",
+				"app/assets/stylesheets/layout.css.scss"
+			],
+			[
+				"app.ham",
+				"app/views/layouts/application.html.haml"
+			],
+			[
+				"lay",
+				"app/assets/stylesheets/layout.css.scss"
+			],
+			[
+				"anu/sh",
+				"app/views/anuncios/show.html.erb"
+			],
+			[
+				"tareas",
+				"app/assets/stylesheets/tareas.css.scss"
+			],
+			[
+				"tareas_con",
+				"app/controllers/tareas_controller.rb"
+			],
+			[
+				"tarea",
+				"test/functional/tareas_controller_test.rb"
+			],
+			[
+				"ta/new",
+				"app/views/tareas/new.html.haml"
+			],
+			[
+				"see",
+				"db/seeds.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 242.0,
+	"status_bar_visible": true
+}

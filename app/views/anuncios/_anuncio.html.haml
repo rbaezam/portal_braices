@@ -1,0 +1,21 @@
+%article.span-22.container
+  %section
+    %h6
+      = link_to anuncio.titulo, anuncio_path(anuncio.id, anuncio.slug)
+      = number_to_currency anuncio.precio_venta
+  %section
+    Publicado el #{l anuncio.fecha_publicacion}
+  %section
+    = anuncio.tipo_anuncio.nombre
+  - if not anuncio.cliente.nil? and not anuncio.cliente.tipo_cliente.nil?
+    %section
+      = anuncio.cliente.tipo_cliente.nombre
+  - if not anuncio.localidad.nil? and not anuncio.localidad.estado.nil?
+    %section
+      = anuncio.localidad.nombre
+      , #{anuncio.localidad.estado.nombre}
+  %section
+    Dirección: #{anuncio.direccion}, C.P. #{anuncio.codigo_postal}
+  %section
+    = truncate(anuncio.descripcion, :length => 300,    |
+      :omission => '...(continua)', :separator => ' ') |

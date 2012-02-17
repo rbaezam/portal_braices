@@ -1,0 +1,38 @@
+// Place all the styles related to the sitio controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+input.watermark {
+	color: #ccc;
+}
+
+#lista_anuncios {
+	#anuncio {
+
+		padding: 5px 0;
+
+		#precio {
+			width: 150px;
+			float: left;
+		}
+		#dias_publicado {
+			float: left;
+			width: 150px;
+		}
+		#tipo_anuncio {
+			float: left;
+			width: 150px;
+		}
+	}
+}
+
+section#busqueda {
+  width: 600px;
+	border: 1px solid #ccc;
+	padding: 5px;
+
+	input#ubicacion {
+		width: 500px;
+	}
+}
+

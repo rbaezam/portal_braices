@@ -1,0 +1,115 @@
+# Additional translations at http://github.com/plataformatec/devise/wiki/I18n
+
+en:
+  errors:
+    messages:
+      expired: "has expired, please request a new one"
+      not_found: "not found"
+      already_confirmed: "was already confirmed, please try signing in"
+      not_locked: "was not locked"
+      not_saved:
+        one: "1 error prohibited this %{resource} from being saved:"
+        other: "%{count} errors prohibited this %{resource} from being saved:"
+
+  devise:
+    failure:
+      already_authenticated: 'You are already signed in.'
+      unauthenticated: 'You need to sign in or sign up before continuing.'
+      unconfirmed: 'You have to confirm your account before continuing.'
+      locked: 'Your account is locked.'
+      invalid: 'Invalid email or password.'
+      invalid_token: 'Invalid authentication token.'
+      timeout: 'Your session expired, please sign in again to continue.'
+      inactive: 'Your account was not activated yet.'
+    sessions:
+      signed_in: 'Signed in successfully.'
+      signed_out: 'Signed out successfully.'
+    passwords:
+      send_instructions: 'You will receive an email with instructions about how to reset your password in a few minutes.'
+      updated: 'Your password was changed successfully. You are now signed in.'
+      updated_not_active: 'Your password was changed successfully.'
+      send_paranoid_instructions: "If your e-mail exists on our database, you will receive a password recovery link on your e-mail"
+    confirmations:
+      send_instructions: 'You will receive an email with instructions about how to confirm your account in a few minutes.'
+      send_paranoid_instructions: 'If your e-mail exists on our database, you will receive an email with instructions about how to confirm your account in a few minutes.'
+      confirmed: 'Your account was successfully confirmed. You are now signed in.'
+    registrations:
+      signed_up: 'Welcome! You have signed up successfully.'
+      inactive_signed_up: 'You have signed up successfully. However, we could not sign you in because your account is %{reason}.'
+      updated: 'You updated your account successfully.'
+      destroyed: 'Bye! Your account was successfully cancelled. We hope to see you again soon.'
+      reasons:
+        inactive: 'inactive'
+        unconfirmed: 'unconfirmed'
+        locked: 'locked'
+    unlocks:
+      send_instructions: 'You will receive an email with instructions about how to unlock your account in a few minutes.'
+      unlocked: 'Your account was successfully unlocked. You are now signed in.'
+      send_paranoid_instructions: 'If your account exists, you will receive an email with instructions about how to unlock it in a few minutes.'
+    omniauth_callbacks:
+      success: 'Successfully authorized from %{kind} account.'
+      failure: 'Could not authorize you from %{kind} because "%{reason}".'
+    mailer:
+      confirmation_instructions:
+        subject: 'Confirmation instructions'
+      reset_password_instructions:
+        subject: 'Reset password instructions'
+      unlock_instructions:
+        subject: 'Unlock Instructions'
+
+es:
+  errors:
+    messages:
+      expired: "ha expirado, por favor pida uno nuevo"
+      not_found: "no encontrado"
+      already_confirmed: "ya está confirmada, por favor intente ingresar"
+      not_locked: "no está bloqueada"
+      not_saved:
+        one: "1 error evitó que este %{resource} fuera guardado:"
+        other: "%{count} errores evitaron que este %{resource} fuera guardado:"
+
+  devise:
+    failure:
+      already_authenticated: 'Ya está dentro del sistema.'
+      unauthenticated: 'Necesita ingresar o registrarse para continuar.'
+      unconfirmed: 'Debe confirmar su cuenta para continuar.'
+      locked: 'Su cuenta está bloqueada.'
+      invalid: 'Correo o contraseña inválidos.'
+      invalid_token: 'Ficha de autenticación invalida.'
+      timeout: 'Su sesión ha expirado, por favor ingrese nuevamente para continuar.'
+      inactive: 'Su cuenta aún no ha sido activada.'
+    sessions:
+      signed_in: 'Ingreso exitoso.'
+      signed_out: 'Usted ha salido del sistema.'
+    passwords:
+      send_instructions: 'Recibirá un correo electrónico con instrucciones sobre cómo reiniciar su contraseña en unos minutos.'
+      updated: 'Su contraseña fue cambiada exitosamente y ha sido ingresado al sistema.'
+      updated_not_active: 'Su contraseña se cambió exitosamente.'
+      send_paranoid_instructions: "Si su correo electrónico existe en nuestra base de datos, usted recibirá un enlace para reiniciar su contraseña en unos minutos."
+    confirmations:
+      send_instructions: 'Usted recibirá un correo electrónico con instrucciones sobre cómo confirmar su cuenta en unos minutos.'
+      send_paranoid_instructions: 'Si su correo electrónico existe en nuestra base de datos, usted recibirá un correo con instrucciones sobre cómo confirmar su cuenta en unos minutos.'
+      confirmed: 'Su cuenta fue confirmada exitosamente, usted ha sido ingresado al sistema.'
+    registrations:
+      signed_up: '¡Bienvenido! Ha ingresado al sistema exitosamente.'
+      inactive_signed_up: 'Se ha registrado exitosamente; sin embargo, no lo hemos podido ingresar debido a que su cuenta está %{reason}.'
+      updated: 'Usted actualizó su cuenta exitosamente.'
+      destroyed: '¡Hasta luego! Su cuenta fue cancelada con éxito, esperamos verle de nuevo pronto. Gracias.'
+      reasons:
+        inactive: 'inactiva'
+        unconfirmed: 'sin confirmar'
+        locked: 'bloqueada'
+    unlocks:
+      send_instructions: 'Recibirá un correo electrónico con instrucciones sobre cómo desbloquear su cuenta en unos minutos.'
+      unlocked: 'Su cuenta fue desbloqueada con éxito, usted ha sido ingresado al sistema.'
+      send_paranoid_instructions: 'Si su cuenta existe, usted recibirá un correo electrónico con instrucciones sobre cómo desbloquear su cuenta en unos minutos.'
+    omniauth_callbacks:
+      success: 'Exitosamente autorizado desde la cuenta %{kind}.'
+      failure: 'No se le pudo autorizar en %{kind} debido a "%{reason}".'
+    mailer:
+      confirmation_instructions:
+        subject: 'Instrucciones de Confirmación'
+      reset_password_instructions:
+        subject: 'Instrucciones de reinicio de contraseña'
+      unlock_instructions:
+        subject: 'Instrucciones de desbloqueo'

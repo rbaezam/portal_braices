@@ -1,0 +1,23 @@
+%section#busqueda
+  %h3 Buscar anuncios
+  = form_tag({:controller => "anuncios", :action => "index"}, :method => "get") do
+    %div
+      = label_tag :ubicacion, 'Ubicación'
+      = text_field_tag :ubicacion, '',                                                          |
+        {:class => 'jq_watermark', :placeholder => 'Ciudad, Estado, Dirección o Código postal'} |
+    %div
+      = label_tag 'tipo_anuncio_venta', 'Venta'
+      = radio_button_tag :tipo_anuncio, :Venta, true
+      = label_tag 'tipo_anuncio_renta', 'Renta'
+      = radio_button_tag :tipo_anuncio, :Renta
+    %div
+      = label_tag :tipo_propiedad, 'Tipo de propiedad'
+      = select_tag :tipo_propiedad,                                          |
+        options_from_collection_for_select(@tipos_propiedades, :id, :nombre) |
+    %div
+      = label_tag :precio, 'Precio'
+      = number_field_tag :precio_desde
+      a
+      \#{number_field_tag :precio_hasta}
+    %div
+      = submit_tag "Buscar"

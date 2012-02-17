@@ -1,0 +1,10 @@
+- content_for :titulo do
+  Página de inicio
+%h1 Portal de bienes raices
+= render :partial => 'formulario_buscar'
+%section
+  %h2 Anuncios destacados
+  %ul#lista_anuncios
+    - @destacados.each do |anuncio|
+      %li
+        = render :partial => 'anuncios/anuncio_corto', :locals => {:anuncio => anuncio}

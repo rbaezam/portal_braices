@@ -1,0 +1,17 @@
+%article#anuncio.container.span-22
+  %section#titulo
+    %h6
+      = link_to anuncio.titulo, anuncio_path(anuncio.id, anuncio.slug)
+  %section#precio
+    = precio(anuncio)
+  %section#dias_publicado
+    = dias_publicado(anuncio)
+  %section#tipo_anuncio
+    = anuncio.tipo_anuncio.nombre
+  - if not anuncio.cliente.nil? and not anuncio.cliente.tipo_cliente.nil?
+    %section#tipo_cliente
+      = anuncio.cliente.tipo_cliente.nombre
+  - if not anuncio.localidad.nil? and not anuncio.localidad.estado.nil?
+    %section#localidad
+      = anuncio.localidad.nombre
+      , #{anuncio.localidad.estado.nombre}

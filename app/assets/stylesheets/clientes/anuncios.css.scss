@@ -1,0 +1,24 @@
+// Place all the styles related to the clientes/anuncios controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+form.frm_anuncio {
+	
+	label {
+		width: 100px;
+		float: left;
+		text-align: right;
+		margin-right: 5px;
+	}
+
+	input, textarea, select {
+		font-family: "Lucida grande", Tahoma, Verdana, Arial, sans-serif;
+		font-size: 11px;
+	}
+}
+
+article.detalles_anuncio {
+	dt {
+		font-weight: bold;
+	}
+}

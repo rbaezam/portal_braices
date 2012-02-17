@@ -1,0 +1,44 @@
+- content_for :titulo do
+  = @anuncio.titulo
+- content_for :meta_titulo do
+  %meta{:content => @anuncio.titulo, :name => "title"}
+%section.span-24
+  %ul
+    %li
+      = link_to 'Regresar al listado', anuncios_path
+%article.span-24.container
+  %section.span-24
+    %h2
+      = @anuncio.titulo
+      = precio(@anuncio)
+    - if not @anuncio.localidad.nil? and not @anuncio.localidad.estado.nil?
+      %div
+        = @anuncio.localidad.nombre
+        , #{@anuncio.localidad.estado.nombre}
+    %div
+      Publicado el #{l @anuncio.fecha_publicacion}
+    %div
+      Dirección: #{@anuncio.direccion}
+  %section.span-6
+    %dl
+      %dt Cuartos:
+      %dd= @anuncio.num_cuartos
+      %dt Baños:
+      %dd= @anuncio.num_banios
+      %dt Construcción:
+      %dd
+        = @anuncio.construccion_m2
+        m²
+      %dt Terreno:
+      %dd
+        = @anuncio.terreno_m2
+        m²
+      %dt Año de construcción:
+      %dd= @anuncio.anio_construccion
+      %dt Tipo de propiedad:
+      %dd= @anuncio.tipo_propiedad.nombre
+  %section.span-16
+    = @anuncio.descripcion
+  .span-24
+    = @anuncio.veces_visto
+    veces visto

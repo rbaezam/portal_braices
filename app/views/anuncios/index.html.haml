@@ -1,0 +1,5 @@
+%h1 Listado de anuncios
+- @anuncios.each do |anuncio|
+  %ul#lista_anuncios
+    %li
+      = render :partial => 'anuncios/anuncio', :locals => {:anuncio => anuncio}

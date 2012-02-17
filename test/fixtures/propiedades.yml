@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  direccion: MyString
+  precio: 1.5
+  construccion_m2: 1.5
+  terreno_m2: 1.5
+  num_cuartos: 1
+  num_banios: 1
+  anio_construccion: 1
+  caracteristicas: MyString
+  tipo_propiedad:
+  localidad:
+
+two:
+  direccion: MyString
+  precio: 1.5
+  construccion_m2: 1.5
+  terreno_m2: 1.5
+  num_cuartos: 1
+  num_banios: 1
+  anio_construccion: 1
+  caracteristicas: MyString
+  tipo_propiedad:
+  localidad:
